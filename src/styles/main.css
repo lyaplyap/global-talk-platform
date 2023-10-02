@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Типографика */
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-dela-gothic: 'Dela Gothic One', sans-serif;
+  --font-weight-light: 500;
+  --font-weight-normal: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+
+  /* Цвета */
+  --primary-grey-light: #F6F5F4;
+  --primary-grey-dark: #757575;
+  --primary-grey-medium: #E0E0E0;
+  --primary-grey-icon: #BABABA;
+  --primary-black: #000;
+  --primary-pink-dark: #945069;
+  --primary-pink-light: #F2D4DC;
+  --primary-cyan-dark: #2B788B;
+  --primary-cyan-light: #C3DCE3;
+  --secondary-green: #639B6D;
+  --secondary-green-faded: rgba(99, 155, 109, 0.30);
+  --secondary-yellow: #C4A24C;
+  --secondary-yellow-faded: rgba(196, 162, 76, 0.30);
+  --secondary-orange: #CB5B43;
+  --secondary-orange-faded: rgba(203, 91, 67, 0.30);
+  --secondary-cyan: #5996A5;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-montserrat);
+  color: var(--primary-black);
+  font-weight: var(--font-weight-normal);
+  background-color: var(--primary-grey-light);
+}
+
+.link {
+  color: var(--primary-grey-dark);
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--primary-black);
+}
+
+.icon {
+  color: var(--primary-grey-icon);
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: var(--primary-black);
+}
+
+.separator_horizontal {
+  border: 0;
+  border-top: 1px solid var(--primary-grey-medium);
+}
+
+.separator_vertical {
+  border: 0;
+  border-right: 1px solid var(--primary-grey-medium);
+}
+
+.button {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: inherit;
+  padding: 0px;
+  cursor: pointer;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.64px;
+  transition: 0.1s all;
+}
+
+.button:active {
+  transform: scale(0.92);
+}
+
+.button_ghost {
+  color: var(--primary-grey-dark);
+  background-color: transparent;
+}
+
+.button_ghost:hover {
+  color: var(--primary-black);
+}
+
+.button_success {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--secondary-green);
+  color: var(--primary-grey-light);
+}
+
+.button_alert {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--secondary-orange-faded);
+  color: var(--secondary-orange);
+}
