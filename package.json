@@ -1,5 +1,5 @@
 {
-    "name": "figma_project",
+    "name": "global-talk-platform",
     "source": "src/index.html",
     "scripts": {
         "start": "parcel",
