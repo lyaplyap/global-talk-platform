@@ -45,6 +45,7 @@ body {
 .link {
   color: var(--primary-grey-dark);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .link:hover {
