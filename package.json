@@ -2,7 +2,7 @@
     "name": "global-talk-platform",
     "scripts": {
         "start": "parcel ./src/pages/*.html",
-        "build": "parcel build"
+        "build": "parcel build ./src/pages/*.html"
     },
     "devDependencies": {
         "parcel": "^2.9.3"
