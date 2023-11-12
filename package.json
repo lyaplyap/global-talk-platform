@@ -2,9 +2,14 @@
     "name": "global-talk-platform",
     "scripts": {
         "start": "parcel ./src/pages/*.html",
-        "build": "parcel build ./src/pages/*.html"
+        "build": "parcel build ./src/pages/*.html --no-source-maps --public-url ./",
+        "deploy": "rm -rf dist && npm run build && gh-pages -d dist"
     },
+    "homepage": "https://lyaplyap.github.io/global-talk-platform",
     "devDependencies": {
         "parcel": "^2.9.3"
+    },
+    "dependencies": {
+        "gh-pages": "^6.0.0"
     }
 }
