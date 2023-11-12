@@ -52,6 +52,4 @@ const e=[{imageSrc:"https://londonvisa.ru/sites/default/files/obuchenie-v-anglii
         </footer>
       </div>
     </div>
-  `,a=e=>{let a=[];for(let s of e){let e=document.createElement("div");e.innerHTML=t(s),a.push(e)}return a},s=e=>{let t=document.body.querySelector(".cards");t&&t.append(...a(e))};document.addEventListener("DOMContentLoaded",()=>s(e));//# sourceMappingURL=index.5cea97ce.js.map
-
-//# sourceMappingURL=index.5cea97ce.js.map
+  `,a=e=>{let a=[];for(let s of e){let e=document.createElement("div");e.innerHTML=t(s),a.push(e)}return a},s=e=>{let t=document.body.querySelector(".cards");t&&t.append(...a(e))};document.addEventListener("DOMContentLoaded",()=>s(e));
